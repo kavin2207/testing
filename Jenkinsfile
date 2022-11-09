@@ -3,7 +3,7 @@ node{
 		git credentialsId: 'github', url: 'https://github.com/kavin2207/testing'	
 	}
 	stage('docker image'){
-		bat "docker build -t abhbhatn/test1:v1"
+		bat 'docker build -t abhbhatn/test1:v1 .'
 	}
 	stage('push to docker hub'){
 
