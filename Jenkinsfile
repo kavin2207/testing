@@ -13,6 +13,6 @@ node{
 		    // some block
 			bat "docker login -u abhbhatn -p Abhijeet@2209"
 		}
-		bat 'docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t abhbhatn/test6:1 --push .'
+		bat 'docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 --name server -t abhbhatn/test6:1 --push .'
 	}
 }
