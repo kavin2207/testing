@@ -1,2 +1,5 @@
-FROM httpd:2.4
-COPY ./public-html/ /usr/local/apache2/htdocs/
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
