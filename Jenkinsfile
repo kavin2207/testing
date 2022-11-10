@@ -11,6 +11,6 @@ node{
 		    // some block
 			bat "docker login -u abhbhatn -p Abhijeet@2209"
 		}
-		bat "docker push abhbhatn/test1:v1"
+		bat "docker push abhbhatn/test2:1"
 	}
 }
