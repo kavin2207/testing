@@ -3,8 +3,8 @@ node{
 		git credentialsId: 'github', url: 'https://github.com/kavin2207/testing'	
 	}
 	stage('docker image'){
-		bat 'docker buildx create --name mybuilder'
-		bat 'docker buildx use mybuilder'
+		//bat 'docker buildx create --name mybuilder'
+		//bat 'docker buildx use mybuilder'
 		
 	}
 	stage('push to docker hub'){
