@@ -3,7 +3,7 @@ node{
 		git credentialsId: 'github', url: 'https://github.com/kavin2207/testing'	
 	}
 	stage('docker image'){
-		bat 'docker build -t abhbhatn/test3:1 .'
+		bat 'docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t abhbhatn/test5:1 .'
 	}
 	stage('push to docker hub'){
 
@@ -11,6 +11,6 @@ node{
 		    // some block
 			bat "docker login -u abhbhatn -p Abhijeet@2209"
 		}
-		bat "docker push abhbhatn/test3:1"
+		bat "docker push abhbhatn/test5:1"
 	}
 }
